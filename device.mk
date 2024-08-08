@@ -31,7 +31,6 @@ PRODUCT_PACKAGES += \
     FrameworksResTundra \
     LineageSystemUITundra \
     SettingsResTundra \
-    SettingsProviderResTundra \
     SystemUIResTundra \
     WifiResTundra
 
