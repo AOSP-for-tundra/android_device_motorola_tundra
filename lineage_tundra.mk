@@ -14,6 +14,17 @@ $(call inherit-product, device/motorola/tundra/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Derp
+DERPFEST_BUILD_TYPE := Unofficial
+
+# Gapps Flag
+WITH_GAPPS := true
+
+# Extras
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
 PRODUCT_NAME := lineage_tundra
 PRODUCT_DEVICE := tundra
 PRODUCT_MANUFACTURER := motorola
