@@ -19,7 +19,7 @@ namespace V2_3 {
 namespace implementation {
 
 using IBiometricsFingerprint_2_1 =
-    ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint;
+        ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint;
 using ::android::sp;
 using ::android::hardware::hidl_array;
 using ::android::hardware::hidl_memory;
@@ -37,16 +37,16 @@ struct BiometricsFingerprint : public IBiometricsFingerprint {
     BiometricsFingerprint();
     // Methods from ::V2_1::IBiometricsFingerprint follow.
     Return<uint64_t> setNotify(
-        const sp<IBiometricsFingerprintClientCallback> &clientCallback) override;
+            const sp<IBiometricsFingerprintClientCallback>& clientCallback) override;
     Return<uint64_t> preEnroll() override;
-    Return<RequestStatus> enroll(const hidl_array<uint8_t, 69> &hat, uint32_t gid,
+    Return<RequestStatus> enroll(const hidl_array<uint8_t, 69>& hat, uint32_t gid,
                                  uint32_t timeoutSec) override;
     Return<RequestStatus> postEnroll() override;
     Return<uint64_t> getAuthenticatorId() override;
     Return<RequestStatus> cancel() override;
     Return<RequestStatus> enumerate() override;
     Return<RequestStatus> remove(uint32_t gid, uint32_t fid) override;
-    Return<RequestStatus> setActiveGroup(uint32_t gid, const hidl_string &storePath) override;
+    Return<RequestStatus> setActiveGroup(uint32_t gid, const hidl_string& storePath) override;
     Return<RequestStatus> authenticate(uint64_t operationId, uint32_t gid) override;
 
     // ::V2_3::IBiometricsFingerprint follow.
