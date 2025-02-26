@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "SettingsResTundra",
-    vendor: true
+    vendor: true,
 }
