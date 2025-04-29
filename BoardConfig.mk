@@ -13,7 +13,6 @@ include hardware/motorola/dolby/BoardConfigVendor.mk
 TARGET_BOOTLOADER_BOARD_NAME := tundra
 
 # Fingerprint
-TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.tundra
 SOONG_CONFIG_qtidisplay_udfps := true
 
 # HIDL
