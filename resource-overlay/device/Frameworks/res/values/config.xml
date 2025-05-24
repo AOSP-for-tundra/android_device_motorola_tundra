@@ -178,6 +178,9 @@
           If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
      <integer name="config_defaultRefreshRateInZone">120</integer>
 
+    <!-- The default refresh rate -->
+    <integer name="config_defaultRefreshRate">0</integer>
+    
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">motorolaedge30fusion</string>
 
@@ -250,5 +253,5 @@
          the framework from using higher refresh rates, even if display modes with higher refresh
          rates are available from hardware composer. Only has an effect if the value is
          non-zero. -->
-    <integer name="config_defaultPeakRefreshRate">120</integer>
+    <integer name="config_defaultPeakRefreshRate">144</integer>
 </resources>
