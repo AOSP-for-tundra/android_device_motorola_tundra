@@ -11,10 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from tundra device
 $(call inherit-product, device/motorola/tundra/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common InfinityX stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_tundra
+# InfinityX Flags
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := "0mar"
+TARGET_SUPPORTS_BLUR := true
+WITH_GAPPS := true
+
+PRODUCT_NAME := infinity_tundra
 PRODUCT_DEVICE := tundra
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
