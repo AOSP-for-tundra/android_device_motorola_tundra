@@ -21,6 +21,15 @@ git clone https://github.com/AOSP-for-tundra/proprietary_vendor_motorola_tundra.
 echo 'Cloning common vendor tree'
 git clone https://github.com/AOSP-for-tundra/proprietary_vendor_motorola_sm7325-common.git -b lineage-23.0 vendor/motorola/sm7325-common
 
+# MotoCamera BS
+git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotCamera4-lahaina.git -b android-15 vendor/motorola/MotCamera4-lahaina
+git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotCamera-common.git -b android-15 vendor/motorola/MotCamera-common
+git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotoPhotoEditor.git -b android-15 vendor/motorola/MotoPhotoEditor
+git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotCamera3AI-lahaina.git -b android-15 vendor/motorola/MotCamera3AI-lahaina
+git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotCameraAI-common.git -b android-15 vendor/motorola/MotCameraAI-common
+git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotoSignatureApp.git -b android-15 vendor/motorola/MotoSignatureApp
+git clone https://gitlab.com/Deivid21/proprietary_vendor_motorola_MotorolaSettingsProvider.git -b android-15 vendor/motorola/MotorolaSettingsProvider
+
 # Keys
 echo 'Cloning private keys'
 rm -rf vendor/lineage/signing

@@ -71,6 +71,12 @@ PRODUCT_COPY_FILES += \
 # LiveDisplay
 $(call soong_config_set,livedisplay_sysfs,enable_af,true)
 
+# Moto Camera 4
+TARGET_MOTCAMERA4 := tundra
+TARGET_USES_MOTCAMERA4 := true
+
+$(call inherit-product, vendor/motorola/MotCamera4-lahaina/motcamera4.mk)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
