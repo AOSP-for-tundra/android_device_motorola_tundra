@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from edge 30 fusion (14 U1SJS34.2-92-10-6 c9587-03599).
+## are from edge 30 fusion (14 U1SJS34.2-92-10-9 40971b-55161).
 ## RETAIL variant
 
 # ACDB Data
